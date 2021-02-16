@@ -25,10 +25,15 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-    main_window.cpp
+    main_window.cpp \
+    trade_data.cpp
 
 HEADERS += \
-    main_window.h
+    main_window.h \
+    cargo.h \
+    month.h \
+    trade_data.h \
+    price_status.h
 
 FORMS += \
     main_window.ui

@@ -1,7 +1,10 @@
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
+#pragma once
 
 #include <QMainWindow>
+
+#include "cargo.h"
+#include "month.h"
+#include "trade_data.h"
 
 namespace Ui {
 class MainWindow;
@@ -16,13 +19,12 @@ public:
     ~MainWindow();
 
 private:
+    using MonthStatus = std::map<Month, PriceStatus>;
+    using CargoData = std::map<Cargo, MonthStatus>;
+
+private:
     Ui::MainWindow *ui;
 
-    // std::map<enum Cargo, struct TradeData> m_tradeData;
-
-    // using PriceInMonth = std::map<enum Month, unsigned int Price>;
-    // using CargoData = std::map<enum Cargo, struct PriceInMonth>;
-    // std::map<std::string City, struct CargoData> m_cargoData;
+    std::map<Cargo, TradeData> m_tradeData;
+    std::map<std::string /*city*/, CargoData> m_cargoData;
 };
-
-#endif // MAINWINDOW_H
