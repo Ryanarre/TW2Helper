@@ -33,6 +33,23 @@
       <height>24</height>
      </rect>
     </property>
+    <property name="dateTime">
+     <datetime>
+      <hour>0</hour>
+      <minute>0</minute>
+      <second>0</second>
+      <year>1800</year>
+      <month>1</month>
+      <day>1</day>
+     </datetime>
+    </property>
+    <property name="minimumDate">
+     <date>
+      <year>1755</year>
+      <month>1</month>
+      <day>14</day>
+     </date>
+    </property>
    </widget>
    <widget class="QPushButton" name="travelBtn">
     <property name="geometry">
@@ -168,6 +185,9 @@
     </property>
    </widget>
    <widget class="QLabel" name="label_6">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -426,7 +446,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="tobaccoPriceTxt_2">
+   <widget class="QLineEdit" name="tobaccoQtyTxt">
     <property name="geometry">
      <rect>
       <x>240</x>
@@ -436,7 +456,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="weaponPriceTxt_2">
+   <widget class="QLineEdit" name="weaponQtyTxt">
     <property name="geometry">
      <rect>
       <x>240</x>
@@ -446,7 +466,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="winePriceTxt_2">
+   <widget class="QLineEdit" name="wineQtyTxt">
     <property name="geometry">
      <rect>
       <x>240</x>
@@ -456,7 +476,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="woodPriceTxt_2">
+   <widget class="QLineEdit" name="woodQtyTxt">
     <property name="geometry">
      <rect>
       <x>240</x>
@@ -466,7 +486,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="cacaoPriceTxt_2">
+   <widget class="QLineEdit" name="cacaoQtyTxt">
     <property name="geometry">
      <rect>
       <x>240</x>
@@ -476,7 +496,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="textilePriceTxt_2">
+   <widget class="QLineEdit" name="textileQtyTxt">
     <property name="geometry">
      <rect>
       <x>240</x>
@@ -486,7 +506,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="gemsPriceTxt_2">
+   <widget class="QLineEdit" name="gemsQtyTxt">
     <property name="geometry">
      <rect>
       <x>240</x>
@@ -506,7 +526,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="sugarPriceTxt_2">
+   <widget class="QLineEdit" name="sugarQtyTxt">
     <property name="geometry">
      <rect>
       <x>240</x>

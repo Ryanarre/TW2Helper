@@ -1,5 +1,7 @@
 #pragma once
 
+#include <QString>
+
 enum Cargo
 {
     CargoFish = 0,
@@ -13,3 +15,5 @@ enum Cargo
     CargoWine,
     CargoGems
 };
+
+QString enumToString(Cargo const & _cargo);
