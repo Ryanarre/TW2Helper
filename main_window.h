@@ -2,39 +2,14 @@
 
 #include <QMainWindow>
 
-/* Structure includes */
-#include <QLineEdit>
-#include <QLabel>
-#include <QPushButton>
-
-#include "cargo.h"
+#include "cargo_gui.h"
 #include "month.h"
 #include "trade_data.h"
+#include "city.h"
 
 namespace Ui {
 class MainWindow;
 }
-
-struct CargoGui
-{
-    /* CANNOT be nullptr */
-    QLineEdit * priceTxt;
-    QLineEdit * qtyTxt;
-    QLabel * lbl;
-
-    /* Can be nullptr */
-    QPushButton * contraBtn = nullptr;
-
-    void setVisible(bool _isVisible)
-    {
-        priceTxt->setVisible(_isVisible);
-        qtyTxt->setVisible(_isVisible);
-        lbl->setVisible(_isVisible);
-
-        if (contraBtn != nullptr)
-            contraBtn->setVisible(_isVisible);
-    }
-};
 
 class MainWindow : public QMainWindow
 {
@@ -46,7 +21,8 @@ public:
 
 private slots:
     void enableCargo();
-    // void enableQty
+    void enableQty(bool _isEnabled);
+    void travel();
 
 private /*functions:*/:
     void connectAndDisable();
@@ -61,5 +37,5 @@ private /*fields*/:
     size_t m_disabledCargo;
 
     std::map<Cargo, TradeData> m_tradeData;
-    std::map<std::string /*city*/, CargoData> m_cargoData;
+    std::map<City, CargoData> m_cargoData;
 };

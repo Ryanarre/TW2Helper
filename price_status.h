@@ -1,5 +1,7 @@
 #pragma once
 
+#include <QString>
+
 enum PriceStatus
 {
     PriceStatusUnknown = 0,
@@ -8,3 +10,5 @@ enum PriceStatus
     PriceStatusHigh,
     PriceStatusHighest
 };
+
+QString enumToString(PriceStatus const & _status);

@@ -13,5 +13,5 @@ enum Month
     MonthSeptember,
     MonthOctober,
     MonthNovember,
-    MonthDecember
+    MonthDecember,
 };

@@ -1,5 +1,7 @@
 #pragma once
 
+#include <QString>
+
 enum City
 {
     CitySantoDomingo = 0,
@@ -7,15 +9,4 @@ enum City
     CityCount
 };
 
-QString enumToString(City const & _city)
-{
-    switch (_city)
-    {
-        case CitySantoDomingo:
-            return "Santo Domingo";
-        case CityPortRoyale:
-            return "Port Royale";
-        default:
-            return "Unknown city";
-    }
-}
+QString enumToString(City const & _city);

@@ -27,7 +27,10 @@ SOURCES += \
         main.cpp \
     main_window.cpp \
     trade_data.cpp \
-    cargo.cpp
+    cargo.cpp \
+    cargo_gui.cpp \
+    city.cpp \
+    price_status.cpp
 
 HEADERS += \
     main_window.h \
@@ -35,7 +38,8 @@ HEADERS += \
     month.h \
     trade_data.h \
     price_status.h \
-    city.h
+    city.h \
+    cargo_gui.h
 
 FORMS += \
     main_window.ui
